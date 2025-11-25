@@ -1349,6 +1349,8 @@ from .llms.watsonx.completion.transformation import IBMWatsonXAIConfig
 from .llms.watsonx.chat.transformation import IBMWatsonXChatConfig
 from .llms.watsonx.embed.transformation import IBMWatsonXEmbeddingConfig
 from .llms.github_copilot.chat.transformation import GithubCopilotConfig
+from .llms.gemini_oauth.chat.transformation import GeminiOAuthConfig
+from .llms.qwen_oauth.chat.transformation import QwenOAuthConfig
 from .llms.github_copilot.responses.transformation import (
     GithubCopilotResponsesAPIConfig,
 )

@@ -734,6 +734,22 @@ def _get_openai_compatible_provider_info(  # noqa: PLR0915
         ) = litellm.DashScopeChatConfig()._get_openai_compatible_provider_info(
             api_base, api_key
         )
+    elif custom_llm_provider == "gemini_oauth":
+        (
+            api_base,
+            dynamic_api_key,
+            custom_llm_provider,
+        ) = litellm.GeminiOAuthConfig()._get_openai_compatible_provider_info(
+            model, api_base, api_key, custom_llm_provider
+        )
+    elif custom_llm_provider == "qwen_oauth":
+        (
+            api_base,
+            dynamic_api_key,
+            custom_llm_provider,
+        ) = litellm.QwenOAuthConfig()._get_openai_compatible_provider_info(
+            model, api_base, api_key, custom_llm_provider
+        )
     elif custom_llm_provider == "moonshot":
         (
             api_base,

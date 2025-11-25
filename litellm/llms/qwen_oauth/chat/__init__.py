@@ -1,0 +1,1 @@
+# Qwen OAuth chat compatibility

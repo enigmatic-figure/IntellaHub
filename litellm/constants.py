@@ -392,6 +392,8 @@ LITELLM_CHAT_PROVIDERS = [
     "wandb",
     "ovhcloud",
     "lemonade",
+    "gemini_oauth",
+    "qwen_oauth",
     "docker_model_runner",
 ]
 
@@ -524,6 +526,8 @@ openai_compatible_endpoints: List = [
     "inference.api.nscale.com/v1",
     "api.studio.nebius.ai/v1",
     "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+    "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "https://generativelanguage.googleapis.com/v1beta/openai",
     "https://api.moonshot.ai/v1",
     "https://api.v0.dev/v1",
     "https://api.morphllm.com/v1",
@@ -580,6 +584,8 @@ openai_compatible_providers: List = [
     "cometapi",
     "clarifai",
     "docker_model_runner",
+    "gemini_oauth",
+    "qwen_oauth",
 ]
 openai_text_completion_compatible_providers: List = (
     [  # providers that support `/v1/completions`
